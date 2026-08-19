@@ -4,12 +4,12 @@
 // ==========================================================================
 
 const GALLERY_ITEMS = [
-  { id: 1, category: 'awards', title: 'Grand Gala Trophy Presentation ()', tag: 'AWARDS CEREMONY' },
-  { id: 2, category: 'final', title: 'Grand Jury Deliberations ()', tag: 'FINAL ROUND' },
-  { id: 3, category: 'screening', title: 'Initial Document Screening Session ()', tag: 'SCREENING ROUND' },
-  { id: 4, category: 'awards', title: 'Hospitality Excellence Winners Stage ()', tag: 'AWARDS CEREMONY' },
-  { id: 5, category: 'final', title: 'Mobility & Infrastructure Keynote ()', tag: 'FINAL ROUND' },
-  { id: 6, category: 'screening', title: 'Shortlist Verification Panel ()', tag: 'SCREENING ROUND' }
+  { id: 1, category: 'awards', title: 'Urbania Lake Highway Expedition', tag: 'SHARED MOBILITY', image: 'assets/urbania_lake_highway.jpg' },
+  { id: 2, category: 'final', title: 'Force Commercial Vehicle Fleet & Facility', tag: 'FLEET & R&D', image: 'assets/force_fleet_facility.jpg' },
+  { id: 3, category: 'screening', title: 'Urbania Luxury Airport Transfer Service', tag: 'AIRPORT TRANSFERS', image: 'assets/urbania_airport_transfer.jpg' },
+  { id: 4, category: 'awards', title: 'Gurkha 4x4 Mountain Expedition', tag: 'ADVENTURE TRAVEL', image: 'assets/gurkha_mountain_expedition.jpg' },
+  { id: 5, category: 'final', title: 'Luxury Traveler Highway Mobility Showcase', tag: 'TOURISM BUS', image: 'assets/hero_travel_mobility.jpg' },
+  { id: 6, category: 'screening', title: 'Urbania Monocoque Van Platform', tag: 'VAN PLATFORM', image: 'assets/urbania_lake_highway.jpg' }
 ];
 
 let activeIndex = 0;
@@ -41,8 +41,12 @@ function renderGallery(filterCategory) {
     : GALLERY_ITEMS.filter(item => item.category === filterCategory);
 
   grid.innerHTML = items.map((item, idx) => `
-    <div class="gallery-preview-item blank-image-placeholder" style="cursor: pointer;" onclick="openLightbox(${idx})">
-      <span class="micro-label" style="background-color: var(--force-white); padding: 0.25rem 0.5rem; border-radius: 2px;">${item.tag}</span>
+    <div class="gallery-preview-item" style="cursor: pointer; position: relative; border-radius: 8px; overflow: hidden; height: 260px; border: 1px solid var(--force-border); box-shadow: 0 4px 16px rgba(0,0,0,0.04);" onclick="openLightbox(${idx})">
+      <img src="${item.image}" alt="${item.title}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(10,10,10,0.85) 100%); padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+        <span class="micro-label" style="background-color: var(--force-primary); color: var(--force-white); padding: 0.25rem 0.625rem; border-radius: 40px; align-self: flex-start; font-weight: 800; font-size: 0.625rem;">${item.tag}</span>
+        <h4 style="color: var(--force-white); font-size: 0.9375rem; font-weight: 700; margin: 0;">${item.title}</h4>
+      </div>
     </div>
   `).join('');
 }
@@ -99,7 +103,13 @@ function updateLightboxContent() {
   const item = GALLERY_ITEMS[activeIndex];
   const titleEl = document.getElementById('lightboxTitle');
   const tagEl = document.getElementById('lightboxTag');
+  const imgSpace = document.querySelector('.lightbox-image-space');
 
   if (titleEl) titleEl.textContent = item.title;
   if (tagEl) tagEl.textContent = item.tag;
+  if (imgSpace && item.image) {
+    imgSpace.style.backgroundImage = `url('${item.image}')`;
+    imgSpace.style.backgroundSize = 'cover';
+    imgSpace.style.backgroundPosition = 'center';
+  }
 }

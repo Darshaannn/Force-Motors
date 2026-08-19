@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Nomination | Travel Awards 2026</title>
+  <meta name="description" content="Submit your entry for Travel Awards 2026 presented by Force Motors. 5-step official entry portal.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="header-brand-group">
+        <a href="index.html" class="awards-logo-text"><span>Travel Awards</span><span class="year">2026</span></a>
+        <div class="brand-divider"></div>
+        <div class="presented-by-logo"><img src="assets/force-motors-logo.png" alt="Force Motors"></div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Force Motors</a>
+        <a href="categories.html" class="nav-link">Categories</a>
+        <a href="rules.html" class="nav-link">Rules & Eligibility</a>
+        <a href="jury.html" class="nav-link">Jury</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="faq.html" class="nav-link">FAQs</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener" class="btn btn-primary active">NOMINATE NOW <span class="btn-arrow">→</span></a>
+        <button class="mobile-nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: calc(var(--header-height-desktop) + 1.5rem);">
+    
+    <div class="nomination-wizard-container">
+      <div style="text-align: center; margin-bottom: 2.5rem;">
+        <span class="micro-label">OFFICIAL ENTRY PORTAL</span>
+        <h1 style="font-size: clamp(2rem, 4vw, 3.25rem); margin-block: 0.5rem;">SUBMIT YOUR ENTRY</h1>
+        <p class="body-main" style="color: var(--force-gray-600);">
+          Travel Awards 2026 • Presented by Force Motors
+        </p>
+      </div>
+
+      <!-- WIZARD PROGRESS BAR -->
+      <div class="wizard-progress-bar">
+        <div id="stepIndicator1" class="wizard-step-indicator active">
+          <span class="step-num">01</span>
+          <span class="step-title">NOMINEE</span>
+        </div>
+        <div id="stepIndicator2" class="wizard-step-indicator">
+          <span class="step-num">02</span>
+          <span class="step-title">CONTACT</span>
+        </div>
+        <div id="stepIndicator3" class="wizard-step-indicator">
+          <span class="step-num">03</span>
+          <span class="step-title">BUSINESS</span>
+        </div>
+        <div id="stepIndicator4" class="wizard-step-indicator">
+          <span class="step-num">04</span>
+          <span class="step-title">ENTRY</span>
+        </div>
+        <div id="stepIndicator5" class="wizard-step-indicator">
+          <span class="step-num">05</span>
+          <span class="step-title">DECLARATION</span>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <form id="nominationForm" novalidate>
+        
+        <!-- STEP 01 — NOMINEE -->
+        <div id="stepPanel1" class="wizard-step-panel active">
+          <h3 style="margin-bottom: 1.5rem;">STEP 01 — NOMINEE & CATEGORY</h3>
+          
+          <div class="form-group">
+            <label class="form-label" for="nomineeName">Organisation / Nominee Name <span class="required-star">*</span></label>
+            <input type="text" id="nomineeName" name="nomineeName" class="form-input" data-required="true" placeholder="Enter official organisation or individual name">
+            <span id="error-nomineeName" class="error-message"></span>
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="awardSegment">Award Segment <span class="required-star">*</span></label>
+              <select id="awardSegment" name="awardSegment" class="form-select" data-required="true"></select>
+              <span id="error-awardSegment" class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="awardCategory">Award Category <span class="required-star">*</span></label>
+              <select id="awardCategory" name="awardCategory" class="form-select" data-required="true">
+                <option value="">-- Select Award Segment First --</option>
+              </select>
+              <span id="error-awardCategory" class="error-message"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="projectName">Project / Initiative Name <span class="required-star">*</span></label>
+            <input type="text" id="projectName" name="projectName" class="form-input" data-required="true" placeholder="Name of campaign, property, route, or initiative being submitted">
+            <span id="error-projectName" class="error-message"></span>
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="websiteUrl">Website URL</label>
+              <input type="url" id="websiteUrl" name="websiteUrl" class="form-input" placeholder="https://example.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="yearEstablished">Year Established</label>
+              <input type="number" id="yearEstablished" name="yearEstablished" class="form-input" placeholder="e.g. 2012">
+            </div>
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="city">Location / City</label>
+              <input type="text" id="city" name="city" class="form-input" placeholder="e.g. Mumbai">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="state">State</label>
+              <input type="text" id="state" name="state" class="form-input" placeholder="e.g. Maharashtra">
+            </div>
+          </div>
+
+          <div class="wizard-nav-actions">
+            <button type="button" id="btnSaveDraft" class="btn btn-secondary">SAVE DRAFT</button>
+            <button type="button" class="btn btn-primary btn-next-step">CONTINUE →</button>
+          </div>
+        </div>
+
+        <!-- STEP 02 — CONTACT -->
+        <div id="stepPanel2" class="wizard-step-panel">
+          <h3 style="margin-bottom: 1.5rem;">STEP 02 — CONTACT INFORMATION</h3>
+          
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="primaryContact">Primary Contact Name <span class="required-star">*</span></label>
+              <input type="text" id="primaryContact" name="primaryContact" class="form-input" data-required="true" placeholder="Full name">
+              <span id="error-primaryContact" class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="designation">Designation <span class="required-star">*</span></label>
+              <input type="text" id="designation" name="designation" class="form-input" data-required="true" placeholder="e.g. Head of Marketing">
+              <span id="error-designation" class="error-message"></span>
+            </div>
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="officialEmail">Official Email <span class="required-star">*</span></label>
+              <input type="email" id="officialEmail" name="officialEmail" class="form-input" data-required="true" placeholder="name@company.com">
+              <span id="error-officialEmail" class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="mobileNumber">Mobile Number <span class="required-star">*</span></label>
+              <input type="tel" id="mobileNumber" name="mobileNumber" class="form-input" data-required="true" placeholder="+91 98765 43210">
+              <span id="error-mobileNumber" class="error-message"></span>
+            </div>
+          </div>
+
+          <div style="margin-top: 1rem; margin-bottom: 1rem; border-top: 1px dashed var(--force-border); padding-top: 1rem;">
+            <span class="micro-label">ALTERNATE CONTACT (OPTIONAL)</span>
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="altContact">Alternate Contact Name</label>
+              <input type="text" id="altContact" name="altContact" class="form-input" placeholder="Full name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="altEmail">Alternate Email</label>
+              <input type="email" id="altEmail" name="altEmail" class="form-input" placeholder="alt@company.com">
+            </div>
+          </div>
+
+          <div class="wizard-nav-actions">
+            <button type="button" class="btn btn-secondary btn-prev-step">← BACK</button>
+            <button type="button" class="btn btn-primary btn-next-step">CONTINUE →</button>
+          </div>
+        </div>
+
+        <!-- STEP 03 — BUSINESS -->
+        <div id="stepPanel3" class="wizard-step-panel">
+          <h3 style="margin-bottom: 1.5rem;">STEP 03 — REGISTERED BUSINESS DETAILS</h3>
+          
+          <div class="form-group">
+            <label class="form-label" for="regOrgName">Registered Organisation Name <span class="required-star">*</span></label>
+            <input type="text" id="regOrgName" name="regOrgName" class="form-input" data-required="true" placeholder="Legal registered entity name">
+            <span id="error-regOrgName" class="error-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regAddress">Registered Address <span class="required-star">*</span></label>
+            <input type="text" id="regAddress" name="regAddress" class="form-input" data-required="true" placeholder="Registered office address">
+            <span id="error-regAddress" class="error-message"></span>
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="regCity">City <span class="required-star">*</span></label>
+              <input type="text" id="regCity" name="regCity" class="form-input" data-required="true">
+              <span id="error-regCity" class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="pinCode">PIN Code <span class="required-star">*</span></label>
+              <input type="text" id="pinCode" name="pinCode" class="form-input" data-required="true">
+              <span id="error-pinCode" class="error-message"></span>
+            </div>
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="businessType">Industry / Business Type <span class="required-star">*</span></label>
+              <select id="businessType" name="businessType" class="form-select" data-required="true">
+                <option value="">-- Select Industry --</option>
+                <option value="Airlines">Airlines & Aviation</option>
+                <option value="Hospitality">Hospitality & Hotels</option>
+                <option value="TourOperator">Tour Operator / DMC</option>
+                <option value="Mobility">Mobility & Fleet Enabler</option>
+                <option value="Tech">Travel Tech / Booking App</option>
+                <option value="TourismBoard">Tourism Board / State Dept</option>
+                <option value="Other">Other Travel Service</option>
+              </select>
+              <span id="error-businessType" class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="yearsPresence">Years of Registered Presence in India <span class="required-star">*</span></label>
+              <input type="number" id="yearsPresence" name="yearsPresence" class="form-input" data-required="true" placeholder="e.g. 10">
+              <span id="error-yearsPresence" class="error-message"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="orgOverview">Organisation Overview <span class="required-star">*</span></label>
+            <textarea id="orgOverview" name="orgOverview" class="form-textarea" data-required="true" maxlength="500" placeholder="Brief overview of your organization (max 500 characters)"></textarea>
+            <div id="counter-orgOverview" class="char-counter">0 / 500 characters</div>
+            <span id="error-orgOverview" class="error-message"></span>
+          </div>
+
+          <div class="wizard-nav-actions">
+            <button type="button" class="btn btn-secondary btn-prev-step">← BACK</button>
+            <button type="button" class="btn btn-primary btn-next-step">CONTINUE →</button>
+          </div>
+        </div>
+
+        <!-- STEP 04 — ENTRY / CASE STUDY -->
+        <div id="stepPanel4" class="wizard-step-panel">
+          <h3 style="margin-bottom: 0.5rem;">STEP 04 — ENTRY & CASE STUDY</h3>
+          <p class="small-text" style="color: var(--force-gray-600); margin-bottom: 2rem;">
+            Please provide factual and specific information that allows the jury to understand and evaluate the initiative clearly.
+          </p>
+
+          <div class="form-group">
+            <label class="form-label" for="initiativeSummary">Initiative Summary <span class="required-star">*</span></label>
+            <textarea id="initiativeSummary" name="initiativeSummary" class="form-textarea" data-required="true" maxlength="1000" placeholder="Explain what the initiative is..."></textarea>
+            <div id="counter-initiativeSummary" class="char-counter">0 / 1000 characters</div>
+            <span id="error-initiativeSummary" class="error-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="businessChallenge">Business / Industry Challenge <span class="required-star">*</span></label>
+            <textarea id="businessChallenge" name="businessChallenge" class="form-textarea" data-required="true" maxlength="1000" placeholder="What problem or opportunity was addressed?"></textarea>
+            <div id="counter-businessChallenge" class="char-counter">0 / 1000 characters</div>
+            <span id="error-businessChallenge" class="error-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="objective">Objective <span class="required-star">*</span></label>
+            <textarea id="objective" name="objective" class="form-textarea" data-required="true" maxlength="800" placeholder="What was the initiative intended to achieve?"></textarea>
+            <div id="counter-objective" class="char-counter">0 / 800 characters</div>
+            <span id="error-objective" class="error-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="execution">Approach / Execution <span class="required-star">*</span></label>
+            <textarea id="execution" name="execution" class="form-textarea" data-required="true" maxlength="1000" placeholder="How was the initiative implemented?"></textarea>
+            <div id="counter-execution" class="char-counter">0 / 1000 characters</div>
+            <span id="error-execution" class="error-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="innovation">Innovation <span class="required-star">*</span></label>
+            <textarea id="innovation" name="innovation" class="form-textarea" data-required="true" maxlength="800" placeholder="What made the approach distinctive or effective?"></textarea>
+            <div id="counter-innovation" class="char-counter">0 / 800 characters</div>
+            <span id="error-innovation" class="error-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="measurableImpact">Measurable Impact / Results <span class="required-star">*</span></label>
+            <textarea id="measurableImpact" name="measurableImpact" class="form-textarea" data-required="true" maxlength="1000" placeholder="Provide measurable evidence wherever possible (growth %, footfall, reach, guest ratings, etc.)"></textarea>
+            <div id="counter-measurableImpact" class="char-counter">0 / 1000 characters</div>
+            <span id="error-measurableImpact" class="error-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Supporting Material (PDF, PPT, Link)</label>
+            <div class="blank-image-placeholder" style="min-height: 120px; border-style: dashed; padding: 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center;">
+              <span class="micro-label">UPLOAD DECK / PUBLIC LINK</span>
+              <span class="small-text" style="color: var(--force-gray-500);">Supported formats: PDF, PPTX, JPG, MP4 public link</span>
+            </div>
+          </div>
+
+          <div class="wizard-nav-actions">
+            <button type="button" class="btn btn-secondary btn-prev-step">← BACK</button>
+            <button type="button" class="btn btn-primary btn-next-step">CONTINUE →</button>
+          </div>
+        </div>
+
+        <!-- STEP 05 — DECLARATION -->
+        <div id="stepPanel5" class="wizard-step-panel">
+          <h3 style="margin-bottom: 1rem;">STEP 05 — PARTICIPANT DECLARATION</h3>
+          
+          <div style="background-color: var(--force-gray-100); padding: 1.5rem; border-radius: 4px; border: 1px solid var(--force-gray-300); font-size: 0.875rem; color: var(--force-gray-700); margin-bottom: 2rem; line-height: 1.6;">
+            <p style="margin-bottom: 0.75rem;"><strong>Declaration Terms:</strong></p>
+            <ul style="list-style: disc; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
+              <li>I declare that the supplied information is accurate to the best of my knowledge.</li>
+              <li>I agree to abide by all official participation rules of Travel Awards 2026 presented by Force Motors.</li>
+              <li>I confirm that I possess necessary authorization from my organisation to submit this entry.</li>
+              <li>I understand that submitted non-confidential materials may be showcased by Awards Management.</li>
+            </ul>
+          </div>
+
+          <div class="form-group">
+            <label style="display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.9375rem; font-weight: 600; cursor: pointer;">
+              <input type="checkbox" id="declRules" name="declRules" data-required="true" style="margin-top: 4px; width: 18px; height: 18px;">
+              <span>I have read and agree to the <a href="rules.html" target="_blank" style="color: var(--force-primary); text-decoration: underline;">Rules & Eligibility</a>. <span class="required-star">*</span></span>
+            </label>
+            <span id="error-declRules" class="error-message"></span>
+          </div>
+
+          <div class="form-group" style="margin-top: 1rem;">
+            <label style="display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.9375rem; font-weight: 600; cursor: pointer;">
+              <input type="checkbox" id="declAccurate" name="declAccurate" data-required="true" style="margin-top: 4px; width: 18px; height: 18px;">
+              <span>I confirm that the information submitted is accurate and complete. <span class="required-star">*</span></span>
+            </label>
+            <span id="error-declAccurate" class="error-message"></span>
+          </div>
+
+          <div class="wizard-nav-actions">
+            <button type="button" class="btn btn-secondary btn-prev-step">← BACK</button>
+            <button type="submit" class="btn btn-primary" style="padding-inline: 3rem;">SUBMIT ENTRY →</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Travel Awards. All rights reserved. ()</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/categories-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/nomination.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Details | Travel Awards 2026</title>
+  <meta name="description" content="View requirements, eligibility, and evaluation criteria for Travel Awards 2026.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="header-brand-group">
+        <a href="index.html" class="awards-logo-text"><span>Travel Awards</span><span class="year">2026</span></a>
+        <div class="brand-divider"></div>
+        <div class="presented-by-logo"><img src="assets/force-motors-logo.png" alt="Force Motors"></div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Force Motors</a>
+        <a href="categories.html" class="nav-link active">Categories</a>
+        <a href="rules.html" class="nav-link">Rules & Eligibility</a>
+        <a href="jury.html" class="nav-link">Jury</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="faq.html" class="nav-link">FAQs</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener" class="btn btn-primary">NOMINATE NOW <span class="btn-arrow">→</span></a>
+        <button class="mobile-nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: calc(var(--header-height-desktop) + 2rem);">
+    <section class="award-intro-section" style="border-top: none;">
+      <div class="container">
+        <!-- BREADCRUMB -->
+        <div style="font-size: 0.8125rem; font-weight: 700; color: var(--force-primary); margin-bottom: 1rem; text-transform: uppercase;">
+          <a href="index.html">HOME</a> / <a href="categories.html">CATEGORIES</a> / <span id="breadcrumb-cat">TRAVEL ENABLERS</span>
+        </div>
+        <h1 id="detail-title" style="margin-block: 0.5rem 1.5rem;">CATEGORY DETAIL</h1>
+        <p id="detail-summary" class="body-large"></p>
+      </div>
+    </section>
+
+    <section style="padding-block: 5rem; background-color: var(--force-white);">
+      <div class="container" style="max-width: 900px;">
+        
+        <div class="rules-content-wrapper">
+          <div class="rules-section-block">
+            <span class="micro-label">SUBCATEGORIES IN THIS GROUP</span>
+            <ul id="detail-subcategories" style="list-style: square; padding-left: 1.5rem; margin-top: 1rem; font-size: 1.125rem; font-weight: 700; color: var(--force-dark); line-height: 1.8;">
+            </ul>
+          </div>
+
+          <div class="rules-section-block">
+            <span class="micro-label">WHO CAN ENTER?</span>
+            <h3 style="margin-top: 0.5rem;">ELIGIBILITY REQUIREMENT</h3>
+            <p id="detail-eligibility" class="body-main" style="margin-top: 0.75rem;"></p>
+          </div>
+
+          <div class="rules-section-block">
+            <span class="micro-label">EVALUATION BENCHMARKS</span>
+            <h3 style="margin-top: 0.5rem;">WHAT THE JURY WILL LOOK FOR</h3>
+            <p id="detail-criteria" class="body-main" style="margin-top: 0.75rem;"></p>
+          </div>
+
+          <div class="rules-section-block">
+            <span class="micro-label">SUBMISSION CHECKLIST</span>
+            <h3 style="margin-top: 0.5rem;">WHAT YOU NEED</h3>
+            <ul id="detail-requirements" style="list-style: checkmark; padding-left: 1.5rem; margin-top: 1rem; line-height: 1.8; color: var(--force-gray-800);">
+            </ul>
+          </div>
+
+          <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--force-border);">
+            <a id="nominate-cat-btn" href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener" class="btn btn-primary" style="padding-inline: 2.5rem;">
+              NOMINATE IN THIS CATEGORY →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Travel Awards. All rights reserved. ()</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/categories-data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const catId = urlParams.get('id') || 'travel-enablers';
+
+      const catData = CATEGORIES_DATA.find(c => c.id === catId) || CATEGORIES_DATA[0];
+
+      document.getElementById('breadcrumb-cat').textContent = catData.groupName;
+      document.getElementById('detail-title').textContent = catData.groupName;
+      document.getElementById('detail-summary').textContent = catData.summary;
+
+      document.getElementById('detail-subcategories').innerHTML = catData.subcategories
+        .map(sub => `<li style="margin-bottom: 0.5rem;">${sub}</li>`).join('');
+
+      document.getElementById('detail-eligibility').textContent = catData.eligibility;
+      document.getElementById('detail-criteria').textContent = catData.evaluationCriteria;
+
+      document.getElementById('detail-requirements').innerHTML = catData.requirements
+        .map(req => `<li style="margin-bottom: 0.5rem;">${req}</li>`).join('');
+      
+      document.getElementById('nominate-cat-btn').href = `https://forms.gle/sW1JJXMcxDuPuCFt5`;
+    });
+  </script>
+</body>
+</html>
+

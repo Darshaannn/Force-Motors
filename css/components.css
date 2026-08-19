@@ -1,0 +1,451 @@
+/* ==========================================================================
+   SHARED UI COMPONENTS (Header, Footer, Buttons, Cards, Route Line)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. GLOBAL HEADER & NAVIGATION
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--force-border);
+  height: var(--header-height-desktop);
+  transition: height var(--transition-smooth), background-color var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.site-header.scrolled {
+  height: var(--header-height-scrolled);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  flex-shrink: 0;
+}
+
+.awards-logo-text {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 0.9375rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--force-dark);
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.awards-logo-text span.year {
+  color: var(--force-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 28px;
+  background-color: var(--force-gray-300);
+  flex-shrink: 0;
+}
+
+.presented-by-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.presented-tag {
+  font-size: 0.5625rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--force-gray-500);
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.presented-by-logo img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  margin-inline: 0.75rem;
+}
+
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--force-dark);
+  position: relative;
+  padding-block: 0.35rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--force-primary);
+  transition: width var(--transition-fast);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.header-actions .btn {
+  padding: 0.625rem 1.125rem;
+  font-size: 0.8125rem;
+}
+
+.mobile-nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  border-radius: 4px;
+}
+
+.mobile-nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--force-dark);
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.mobile-nav-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-nav-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile Drawer Overlay */
+.mobile-nav-drawer {
+  position: fixed;
+  top: var(--header-height-mobile);
+  left: 0;
+  width: 100%;
+  height: calc(100vh - var(--header-height-mobile));
+  background-color: var(--force-white);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  transform: translateX(100%);
+  transition: transform var(--transition-smooth);
+  overflow-y: auto;
+}
+
+.mobile-nav-drawer.open {
+  transform: translateX(0);
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mobile-nav-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--force-dark);
+  border-bottom: 1px solid var(--force-gray-100);
+  padding-bottom: 0.75rem;
+}
+
+.mobile-nav-footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--force-border);
+}
+
+/* Mobile Sticky Bottom CTA */
+.mobile-sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 990;
+  padding: 0.875rem 1.25rem;
+  background-color: var(--force-white);
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid var(--force-border);
+}
+
+/* --------------------------------------------------------------------------
+   2. BUTTON SYSTEM
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.9375rem 1.75rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--force-primary);
+  color: var(--force-white);
+  border: 1px solid var(--force-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--force-primary-dark);
+  border-color: var(--force-primary-dark);
+}
+
+.btn-primary .btn-arrow {
+  transition: transform var(--transition-fast);
+}
+
+.btn-primary:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--force-primary);
+  border: 1.5px solid var(--force-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--force-primary-tint);
+}
+
+.btn-dark {
+  background-color: var(--force-dark);
+  color: var(--force-white);
+  border: 1px solid var(--force-dark);
+}
+
+.btn-dark:hover {
+  background-color: var(--force-gray-900);
+}
+
+.btn-white {
+  background-color: var(--force-white);
+  color: var(--force-primary);
+  border: 1px solid var(--force-white);
+}
+
+.btn-white:hover {
+  background-color: var(--force-primary-tint);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--force-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.text-link:hover .link-arrow {
+  transform: translateX(4px);
+}
+
+.link-arrow {
+  transition: transform var(--transition-fast);
+}
+
+/* --------------------------------------------------------------------------
+   3. ROUTE / JOURNEY MOTIF LINE
+   -------------------------------------------------------------------------- */
+.route-line-svg {
+  width: 100%;
+  height: 60px;
+  overflow: visible;
+  margin-block: 1rem;
+}
+
+.route-line-path {
+  fill: none;
+  stroke: var(--force-primary);
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-dasharray: 8 6;
+}
+
+/* --------------------------------------------------------------------------
+   4. PARTNER BRANDS BLOCK
+   -------------------------------------------------------------------------- */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.partner-card {
+  border: 1px solid var(--force-border);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-radius: 4px;
+  background-color: var(--force-white);
+}
+
+.partner-role {
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--force-gray-500);
+  margin-bottom: 0.75rem;
+}
+
+.partner-name-placeholder {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--force-primary);
+}
+
+.partner-card.featured-partner {
+  border-color: var(--force-primary);
+  background-color: var(--force-primary-tint);
+}
+
+/* --------------------------------------------------------------------------
+   5. GLOBAL FOOTER
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background-color: var(--force-dark);
+  color: var(--force-white);
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  margin-top: auto;
+  border-top: 3px solid var(--force-primary);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.footer-brand-col .footer-logo-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--force-white);
+  margin-bottom: 0.5rem;
+}
+
+.footer-brand-col .footer-tagline {
+  color: var(--force-gray-400);
+  font-size: 0.9375rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.footer-presented {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.875rem 1.25rem;
+  border-radius: 4px;
+  border: 1px solid var(--force-border-dark);
+  width: fit-content;
+}
+
+.footer-col-heading {
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--force-primary-light);
+  margin-bottom: 1.25rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-links a {
+  color: var(--force-gray-300);
+  font-size: 0.9375rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--force-white);
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid var(--force-border-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--force-gray-400);
+  font-size: 0.875rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-bottom-links a:hover {
+  color: var(--force-white);
+}

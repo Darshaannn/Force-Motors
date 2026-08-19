@@ -1,0 +1,167 @@
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS & MOBILE ADAPTATIONS
+   ========================================================================== */
+
+/* Large Desktop Adjustments (1200px and up) */
+@media (min-width: 1200px) {
+  /* standard grid styles apply */
+}
+
+/* Desktop / Small Laptop (992px to 1199px) */
+@media (max-width: 1199px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+  .journey-timeline-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+  }
+  .why-enter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet Layouts (768px to 991px) */
+@media (max-width: 991px) {
+  .site-header {
+    height: var(--header-height-mobile);
+  }
+  .main-nav {
+    display: none; /* Handled via mobile drawer */
+  }
+  .mobile-nav-toggle {
+    display: flex;
+  }
+  .header-actions .btn {
+    display: none; /* Hidden on mobile header, available in drawer & sticky bottom */
+  }
+  .mobile-sticky-cta {
+    display: block;
+  }
+  body {
+    padding-bottom: 70px; /* Offset for sticky bottom CTA */
+  }
+
+  .hero-grid, .intro-editorial-grid, .force-feature-grid, .rules-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-visual {
+    height: 380px;
+  }
+
+  .ecosystem-node {
+    grid-template-columns: 60px 1fr;
+    row-gap: 0.75rem;
+  }
+
+  .ecosystem-node .node-desc {
+    grid-column: 1 / -1;
+  }
+
+  .category-module-item {
+    grid-template-columns: 60px 1fr;
+    row-gap: 1rem;
+  }
+  .category-module-item .cat-sub-preview, .category-module-item .text-link {
+    grid-column: 1 / -1;
+  }
+
+  .why-enter-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .jury-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .impact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .rules-sticky-toc {
+    display: none; /* Replaced by accordion or mobile selector */
+  }
+}
+
+/* Mobile Devices (480px to 767px) */
+@media (max-width: 767px) {
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .journey-timeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jury-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .masonry-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-preview-item.large {
+    grid-column: span 1;
+  }
+
+  .form-grid-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .wizard-progress-bar {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.25rem;
+  }
+
+  .step-title {
+    display: none; /* Show only step numbers on mobile progress bar */
+  }
+
+  .wizard-step-panel {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
+
+/* Small Mobile (<480px) */
+@media (max-width: 479px) {
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

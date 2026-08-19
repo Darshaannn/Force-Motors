@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Travel Awards 2026</title>
+  <meta name="description" content="Get in touch with the Travel Awards 2026 secretariat for nomination support, media enquiries, or sponsorship.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="header-brand-group">
+        <a href="index.html" class="awards-logo-text"><span>Travel Awards</span><span class="year">2026</span></a>
+        <div class="brand-divider"></div>
+        <div class="presented-by-logo"><img src="assets/force-motors-logo.png" alt="Force Motors"></div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Force Motors</a>
+        <a href="categories.html" class="nav-link">Categories</a>
+        <a href="rules.html" class="nav-link">Rules & Eligibility</a>
+        <a href="jury.html" class="nav-link">Jury</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="faq.html" class="nav-link">FAQs</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener" class="btn btn-primary">NOMINATE NOW <span class="btn-arrow">→</span></a>
+        <button class="mobile-nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: calc(var(--header-height-desktop) + 2rem);">
+    <section class="award-intro-section" style="border-top: none;">
+      <div class="container">
+        <span class="micro-label">SECRETARIAT & ENQUIRIES</span>
+        <h1 style="margin-block: 1rem 1.5rem;">GET IN TOUCH.</h1>
+      </div>
+    </section>
+
+    <section style="padding-block: 5rem; background-color: var(--force-white);">
+      <div class="container">
+        <div class="hero-grid" style="align-items: flex-start;">
+          
+          <!-- LEFT: ENQUIRIES -->
+          <div>
+            <h3 style="margin-bottom: 2rem;">AWARD ENQUIRIES</h3>
+
+            <div style="margin-bottom: 2rem;">
+              <div class="micro-label">GENERAL ENQUIRIES</div>
+              <div style="font-size: 1.25rem; font-weight: 700; color: var(--force-dark);">()</div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <div class="micro-label">NOMINATION SUPPORT</div>
+              <div style="font-size: 1.25rem; font-weight: 700; color: var(--force-dark);">()</div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <div class="micro-label">PARTNERSHIPS</div>
+              <div style="font-size: 1.25rem; font-weight: 700; color: var(--force-dark);">()</div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <div class="micro-label">MEDIA ENQUIRIES</div>
+              <div style="font-size: 1.25rem; font-weight: 700; color: var(--force-dark);">()</div>
+            </div>
+          </div>
+
+          <!-- RIGHT: FORM -->
+          <div style="background-color: var(--force-gray-100); padding: 3rem; border-radius: 4px; border: 1px solid var(--force-border);">
+            <h3 style="margin-bottom: 1.5rem;">SEND A MESSAGE</h3>
+            
+            <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent prototype mock!');">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Name *</label>
+                <input type="text" id="contactName" class="form-input" required placeholder="Full Name">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactOrg">Organisation</label>
+                <input type="text" id="contactOrg" class="form-input" placeholder="Company Name">
+              </div>
+
+              <div class="form-grid-2col">
+                <div class="form-group">
+                  <label class="form-label" for="contactEmail">Email *</label>
+                  <input type="email" id="contactEmail" class="form-input" required placeholder="email@company.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactPhone">Phone</label>
+                  <input type="tel" id="contactPhone" class="form-input" placeholder="+91 98765 43210">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="enquiryType">Enquiry Type *</label>
+                <select id="enquiryType" class="form-select" required>
+                  <option value="">-- Select Type --</option>
+                  <option value="Nomination">Nomination Assistance</option>
+                  <option value="Partnership">Partnership Opportunities</option>
+                  <option value="Media">Media & Press</option>
+                  <option value="General">General Query</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">Message *</label>
+                <textarea id="contactMessage" class="form-textarea" required maxlength="500" placeholder="Type your message here..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                SEND MESSAGE →
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Travel Awards. All rights reserved. ()</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Travel Awards 2026</title>
+  <meta name="description" content="Editorial image archive of Travel Awards screening, jury deliberation, and awards gala.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="header-brand-group">
+        <a href="index.html" class="awards-logo-text"><span>TRAVEL AWARDS</span><span class="year">2026</span></a>
+        <div class="brand-divider"></div>
+        <div class="presented-by-logo"><img src="assets/force-motors-logo.png" alt="Force Motors"></div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener" class="nav-link">REGISTER</a>
+        <a href="categories.html" class="nav-link">CATEGORIES</a>
+        <a href="rules.html" class="nav-link">RULES</a>
+        <a href="gallery.html" class="nav-link active">GALLERY</a>
+        <a href="about.html" class="nav-link">ABOUT FORCE MOTORS</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener" class="btn btn-primary">REGISTER NOW <span class="btn-arrow">→</span></a>
+        <button class="mobile-nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- BREADCRUMBS -->
+    <div class="container" style="padding-top: calc(var(--header-height-desktop) + 0.75rem);">
+      <nav aria-label="Breadcrumb" style="font-size: 0.75rem; font-weight: 700; color: var(--force-primary); text-transform: uppercase;">
+        <a href="index.html">HOME</a> › <span>GALLERY</span>
+      </nav>
+    </div>
+
+    <section class="award-intro-section" style="border-top: none; padding-top: 1.5rem;">
+      <div class="container">
+        <span class="micro-label">EDITORIAL ARCHIVE</span>
+        <h1 style="margin-block: 0.5rem 1rem;">GALLERY</h1>
+        
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem;">
+          <button class="btn btn-secondary gallery-filter-btn active" data-filter="all">ALL</button>
+          <button class="btn btn-secondary gallery-filter-btn" data-filter="awards">AWARDS</button>
+          <button class="btn btn-secondary gallery-filter-btn" data-filter="final">FINAL ROUND</button>
+          <button class="btn btn-secondary gallery-filter-btn" data-filter="screening">SCREENING ROUND</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASONRY GRID -->
+    <section style="padding-block: 4rem; background-color: var(--force-white);">
+      <div class="container">
+        <div id="gallery-grid" class="masonry-preview-grid">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CUSTOM ACCESSIBLE LIGHTBOX MODAL -->
+  <div id="lightboxModal" class="custom-lightbox-modal" role="dialog" aria-modal="true" aria-label="Image gallery view">
+    <div class="lightbox-content-box">
+      <div class="lightbox-image-space blank-image-placeholder dark-tint">
+        <span id="lightboxTag" class="micro-label" style="color: var(--force-primary-light);">TAG</span>
+      </div>
+      <div class="lightbox-caption-bar">
+        <div id="lightboxTitle" style="font-weight: 700;">CAPTION TITLE</div>
+        <div style="display: flex; gap: 0.5rem;">
+          <button id="lightboxPrev" class="lightbox-prev-btn" aria-label="Previous image">‹</button>
+          <button id="lightboxNext" class="lightbox-next-btn" aria-label="Next image">›</button>
+          <button id="lightboxClose" class="lightbox-close-btn" aria-label="Close modal">✕</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-title">TRAVEL AWARDS 2026</div>
+          <p class="footer-tagline">Celebrating excellence across India’s travel and tourism ecosystem.</p>
+          <div class="footer-presented">
+            
+            <img src="assets/force-motors-logo.png" alt="Force Motors" style="height: 24px;">
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-heading">NAVIGATION</div>
+          <ul class="footer-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT FORCE MOTORS</a></li>
+            <li><a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener">REGISTER</a></li>
+            <li><a href="categories.html">CATEGORIES</a></li>
+            <li><a href="rules.html">RULES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-heading">PARTICIPATE</div>
+          <ul class="footer-links">
+            <li><a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener">REGISTER NOW</a></li>
+            <li><a href="categories.html">VIEW CATEGORIES</a></li>
+            <li><a href="rules.html">RULES & GUIDELINES</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-heading">FORCE MOTORS</div>
+          <ul class="footer-links">
+            <li><a href="about.html">ABOUT FORCE MOTORS</a></li>
+            <li><a href="https://www.forcemotors.com" target="_blank" rel="noopener">OFFICIAL WEBSITE ()</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-heading">CONNECT</div>
+          <ul class="footer-links">
+            <li><a href="rules.html">BENNETT COLEMAN & CO. LTD. ()</a></li>
+            <li><a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener">REGISTRATION SUPPORT ()</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Travel Awards. Bennett Coleman & Co. Ltd. (BCCL). All rights reserved. ()</div>
+        <div class="footer-bottom-links">
+          <a href="rules.html">PRIVACY POLICY ()</a>
+          <a href="rules.html">TERMS & CONDITIONS ()</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
+

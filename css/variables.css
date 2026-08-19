@@ -1,0 +1,54 @@
+/* ==========================================================================
+   FORCE MOTORS - BRAND VARIABLES & SYSTEM TOKENS
+   Source of Truth: Official Force Motors Logo
+   Primary Blue: #1664ab / #1268b8
+   Dark Neutral: #0a0a0a
+   White: #ffffff
+   ========================================================================== */
+
+:root {
+  /* Brand Primary Colors (Strictly derived from Force Motors logo) */
+  --force-primary: #1664ab;
+  --force-primary-dark: #0e4b83;
+  --force-primary-deeper: #09335c;
+  --force-primary-light: #4388c7;
+  --force-primary-tint: #ebf3fa;
+  --force-primary-subtle: #f2f7fc;
+
+  /* Brand Neutral Colors */
+  --force-dark: #0a0a0a;
+  --force-dark-card: #141414;
+  --force-dark-surface: #1e1e1e;
+  --force-white: #ffffff;
+  
+  --force-gray-900: #121212;
+  --force-gray-800: #262626;
+  --force-gray-700: #404040;
+  --force-gray-600: #525252;
+  --force-gray-500: #737373;
+  --force-gray-400: #a3a3a3;
+  --force-gray-300: #d4d4d4;
+  --force-gray-200: #e5e5e5;
+  --force-gray-100: #f5f5f5;
+
+  /* Structural Variables */
+  --force-border: rgba(22, 100, 171, 0.18);
+  --force-border-dark: rgba(255, 255, 255, 0.12);
+  --force-muted: #666666;
+  --force-muted-light: #999999;
+  
+  /* Typography Tokens */
+  --font-primary: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+
+  /* Spacing & Layout */
+  --site-max-width: 1320px;
+  --header-height-desktop: 88px;
+  --header-height-scrolled: 72px;
+  --header-height-mobile: 68px;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}

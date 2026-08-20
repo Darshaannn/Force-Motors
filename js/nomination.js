@@ -382,7 +382,7 @@ function handleFinalSubmit() {
 
   // Configure FormSubmit Email Target
   formData.append('_captcha', 'false');
-  formData.append('_subject', `New Nomination Entry 2026: ${formData.get('nomineeName') || 'Travel Awards'}`);
+  formData.append('_subject', `New Nomination Entry 2026: ${formData.get('nomineeName') || 'Travel and Tourism Awards'}`);
   formData.append('_template', 'table');
 
   // Submit via FormSubmit AJAX to xpandventures2024@gmail.com

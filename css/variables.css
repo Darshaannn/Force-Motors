@@ -1,25 +1,45 @@
 /* ==========================================================================
-   FORCE MOTORS - BRAND VARIABLES & SYSTEM TOKENS
-   Source of Truth: Official Force Motors Logo
-   Primary Blue: #1664ab / #1268b8
-   Dark Neutral: #0a0a0a
-   White: #ffffff
+   TIMES TRAVEL AND TOURISM AWARDS × FORCE MOTORS - BRAND VARIABLES & SYSTEM TOKENS
+   Centralized Color System: Black × White × Gold
    ========================================================================== */
 
 :root {
-  /* Brand Primary Colors (Strictly derived from Force Motors logo) */
-  --force-primary: #1664ab;
-  --force-primary-dark: #0e4b83;
-  --force-primary-deeper: #09335c;
-  --force-primary-light: #4388c7;
-  --force-primary-tint: #ebf3fa;
-  --force-primary-subtle: #f2f7fc;
+  /* 1. Core Color System */
+  --black: #0A0A0A;
+  --black-soft: #151515;
+  --black-elevated: #1D1D1D;
 
-  /* Brand Neutral Colors */
-  --force-dark: #0a0a0a;
-  --force-dark-card: #141414;
-  --force-dark-surface: #1e1e1e;
-  --force-white: #ffffff;
+  --white: #FFFFFF;
+  --off-white: #F7F7F4;
+
+  --gold: #C6A15B;
+  --gold-light: #D8BC7A;
+  --gold-dark: #9E7A36;
+
+  --gold-soft: rgba(198, 161, 91, 0.14);
+  --gold-border: rgba(198, 161, 91, 0.38);
+
+  --text-primary: #0A0A0A;
+  --text-secondary: #5B5B5B;
+
+  --text-on-dark: #FFFFFF;
+  --text-muted-dark: #BDBDBD;
+
+  --border-light: rgba(10, 10, 10, 0.12);
+  --border-dark: rgba(255, 255, 255, 0.15);
+
+  /* 2. Backward-compatible Legacy Map (to prevent breaking component classes) */
+  --force-primary: var(--gold);
+  --force-primary-dark: var(--gold-dark);
+  --force-primary-deeper: var(--black-elevated);
+  --force-primary-light: var(--gold-light);
+  --force-primary-tint: var(--gold-soft);
+  --force-primary-subtle: var(--off-white);
+
+  --force-dark: var(--black);
+  --force-dark-card: var(--black-soft);
+  --force-dark-surface: var(--black-elevated);
+  --force-white: var(--white);
   
   --force-gray-900: #121212;
   --force-gray-800: #262626;
@@ -29,11 +49,10 @@
   --force-gray-400: #a3a3a3;
   --force-gray-300: #d4d4d4;
   --force-gray-200: #e5e5e5;
-  --force-gray-100: #f5f5f5;
+  --force-gray-100: var(--off-white);
 
-  /* Structural Variables */
-  --force-border: rgba(22, 100, 171, 0.18);
-  --force-border-dark: rgba(255, 255, 255, 0.12);
+  --force-border: var(--border-light);
+  --force-border-dark: var(--border-dark);
   --force-muted: #666666;
   --force-muted-light: #999999;
   
@@ -42,9 +61,9 @@
   --font-serif: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
 
   /* Spacing & Layout */
-  --site-max-width: 1320px;
-  --header-height-desktop: 88px;
-  --header-height-scrolled: 72px;
+  --site-max-width: 1440px;
+  --header-height-desktop: 92px;
+  --header-height-scrolled: 76px;
   --header-height-mobile: 68px;
 
   /* Transitions */

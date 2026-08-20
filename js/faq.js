@@ -1,29 +1,35 @@
 // ==========================================================================
 // FAQ ACCORDION INTERACTIVITY
-// Accessible show/hide accordion tabs
+// Accessible single-open show/hide accordion tabs
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
-  const faqItems = document.querySelectorAll('.faq-accordion-item');
+  const faqItems = document.querySelectorAll('.faq-item');
 
   faqItems.forEach(item => {
-    const header = item.querySelector('.faq-question-header');
-    if (!header) return;
+    const button = item.querySelector('.faq-question');
+    const icon = item.querySelector('.faq-toggle');
+    if (!button) return;
 
-    header.addEventListener('click', () => {
+    button.addEventListener('click', () => {
       const isOpen = item.classList.contains('open');
 
-      // Close all other items
+      // Close all items smoothly
       faqItems.forEach(i => {
+        const btn = i.querySelector('.faq-question');
+        const ico = i.querySelector('.faq-toggle');
         i.classList.remove('open');
-        const h = i.querySelector('.faq-question-header');
-        if (h) h.setAttribute('aria-expanded', 'false');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+        if (ico) ico.textContent = '+';
       });
 
+      // If clicked item was not open, open it smoothly
       if (!isOpen) {
         item.classList.add('open');
-        header.setAttribute('aria-expanded', 'true');
+        button.setAttribute('aria-expanded', 'true');
+        if (icon) icon.textContent = '−';
       }
     });
   });
 });
+

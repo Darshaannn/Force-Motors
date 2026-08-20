@@ -1,188 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frequently Asked Questions | Travel Awards 2026</title>
-  <meta name="description" content="Answers to common questions regarding eligibility, nomination process, dates, and jury scoring for Travel Awards 2026.">
-  
+  <title>Frequently Asked Questions | Times Travel and Tourism Awards</title>
+  <meta name="description" content="Find answers to frequently asked questions about participation, jury evaluation, important dates and winner selection for Times <span class="text-gold">Travel and Tourism Awards</span>.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <style>
-    .faq-accordion-item {
-      border: 1px solid var(--force-border);
-      border-radius: 4px;
-      margin-bottom: 1rem;
-      background-color: var(--force-white);
-      overflow: hidden;
-    }
-    .faq-question-header {
-      width: 100%;
-      padding: 1.5rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 1.125rem;
-      font-weight: 700;
-      color: var(--force-dark);
-      text-align: left;
-    }
-    .faq-answer-body {
-      display: none;
-      padding: 0 2rem 1.5rem 2rem;
-      color: var(--force-gray-700);
-      line-height: 1.6;
-    }
-    .faq-accordion-item.open .faq-answer-body {
-      display: block;
-    }
-    .faq-accordion-item.open .faq-icon {
-      transform: rotate(180deg);
-    }
-    .faq-icon {
-      transition: transform var(--transition-fast);
-      color: var(--force-primary);
-      font-weight: 800;
-    }
-  </style>
+
+  <!-- FAQ Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who can participate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Travel and tourism businesses, operators, and travel technology companies registered in India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a jury member's organisation participate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — but the jury member cannot evaluate their own entry. Each entry is reviewed by 3–4 jury members."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the important dates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Early Bird: XX/XX/XXXX · Final Deadline: XX/XX/XXXX · Jury Meeting & Awards Night: TBA"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are winners selected?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eligible entries reviewed by the Jury → Shortlisted nominees evaluated by the Grand Jury → Winners announced at the Awards Ceremony."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
 
+  <!-- GLOBAL HEADER -->
   <header class="site-header">
     <div class="container header-container">
       <div class="header-brand-group">
-        <a href="index.html" class="awards-logo-text"><span>Travel Awards</span><span class="year">2026</span></a>
+        <a href="index.html" class="awards-logo-text" aria-label="Travel and Tourism Awards 2026 Homepage">
+          <span><span class="text-gold">TRAVEL AND TOURISM AWARDS</span></span>
+          <span class="year">2026</span>
+        </a>
         <div class="brand-divider"></div>
-        <div class="presented-by-logo"><img src="assets/force-motors-logo.png" alt="Force Motors"></div>
+        <div class="presented-by-logo">
+          <img src="assets/force-motors-logo.png" alt="Force Motors Logo">
+        </div>
       </div>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About Force Motors</a>
-        <a href="categories.html" class="nav-link">Categories</a>
-        <a href="rules.html" class="nav-link">Rules & Eligibility</a>
-        <a href="jury.html" class="nav-link">Jury</a>
-        <a href="gallery.html" class="nav-link">Gallery</a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="categories.html" class="nav-link">CATEGORIES</a>
+        <a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener" class="nav-link">REGISTER</a>
+        <a href="nomination-process.html" class="nav-link">NOMINATION PROCESS</a>
+        <a href="rules.html" class="nav-link">RULES</a>
+        <a href="gallery.html" class="nav-link">GALLERY</a>
         <a href="faq.html" class="nav-link active">FAQs</a>
       </nav>
+
       <div class="header-actions">
-        <a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener" class="btn btn-primary">NOMINATE NOW <span class="btn-arrow">→</span></a>
-        <button class="mobile-nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener" class="btn btn-primary">
+          REGISTER NOW <span class="btn-arrow">→</span>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
 
-  <main style="padding-top: calc(var(--header-height-desktop) + 2rem);">
-    <section class="award-intro-section" style="border-top: none;">
-      <div class="container">
-        <span class="micro-label">HELP CENTER</span>
-        <h1 style="margin-block: 1rem 1.5rem;">QUESTIONS? WE HAVE ANSWERS.</h1>
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">HOME</a>
+      <a href="categories.html" class="mobile-nav-link">CATEGORIES</a>
+      <a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener" class="mobile-nav-link">REGISTER</a>
+      <a href="nomination-process.html" class="mobile-nav-link">NOMINATION PROCESS</a>
+      <a href="rules.html" class="mobile-nav-link">RULES</a>
+      <a href="gallery.html" class="mobile-nav-link">GALLERY</a>
+      <a href="faq.html" class="mobile-nav-link active">FAQs</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <div class="presented-tag" style="margin-bottom: 0.5rem;">PRESENTED BY</div>
+      <div class="logo-wrapper">
+        <img src="assets/force-motors-logo.png" alt="Force Motors Logo" style="height: 28px;">
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION (EDITORIAL BACKDROP) -->
+    <section style="background-color: var(--off-white); padding-block: 5rem 4rem; border-bottom: 1px solid var(--border-light);">
+      <div class="container" style="max-width: 1140px;">
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.75rem;">
+          <span class="micro-label" style="color: var(--gold-dark); font-weight: 800; letter-spacing: 0.15em; display: inline-block;">TIMES <span class="text-gold">TRAVEL AND TOURISM AWARDS</span> • HELP CENTER</span>
+          <h1 style="font-size: clamp(2.5rem, 5vw, 4.75rem); font-weight: 800; line-height: 1.04; text-transform: uppercase; margin-bottom: 0.5rem; color: var(--black);">
+            FREQUENTLY <span class="text-gold">ASKED QUESTIONS</span>
+          </h1>
+          <p style="font-size: clamp(1.125rem, 1.5vw, 1.25rem); color: var(--text-secondary); max-width: 720px; line-height: 1.6;">
+            Everything you need to know about eligibility, jury evaluation, important timelines, and winner selection for the 2026 edition.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section style="padding-block: 5rem; background-color: var(--force-white);">
-      <div class="container" style="max-width: 900px;">
+    <!-- MAIN FAQ SECTION -->
+    <section style="background-color: var(--white); padding-block: 6rem;">
+      <div class="container" style="max-width: 1140px;">
         
-        <div class="faq-accordion-item open">
-          <button class="faq-question-header" aria-expanded="true">
-            <span>Who can participate?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer-body">
-            Any registered entity, hospitality provider, airline, tour operator, tech platform, or travel creator operating within India or serving Indian travellers is eligible.
+        <div style="margin-bottom: 3.5rem; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem;">
+          <div>
+            <span class="micro-label" style="color: var(--gold-dark); font-weight: 800; letter-spacing: 0.12em; display: block; margin-bottom: 0.5rem;">OFFICIAL GOVERNANCE & GUIDELINES</span>
+            <h2 style="font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 800; color: var(--black); line-height: 1.1; margin: 0;">
+              Clear answers for every nominee.
+            </h2>
+          </div>
+          <div style="font-size: 0.9375rem; font-weight: 700; color: var(--text-secondary);">
+            Click any question to expand details
           </div>
         </div>
 
-        <div class="faq-accordion-item">
-          <button class="faq-question-header" aria-expanded="false">
-            <span>Can one organisation submit multiple entries?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer-body">
-            Yes, subject to current programme rules and separate initiative requirements for each application.
-          </div>
-        </div>
+        <div class="faq-list">
+          
+          <!-- FAQ 01 -->
+          <article class="faq-item open">
+            <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-1">
+              <span class="faq-number">01</span>
+              <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                <span class="faq-topic-tag">ELIGIBILITY</span>
+                <span class="faq-title">Who can participate?</span>
+              </div>
+              <span class="faq-toggle" aria-hidden="true">−</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-1">
+              <p>Travel and tourism businesses, operators, and travel technology companies registered in India.</p>
+            </div>
+          </article>
 
-        <div class="faq-accordion-item">
-          <button class="faq-question-header" aria-expanded="false">
-            <span>Can one initiative be entered in several categories?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer-body">
-            Subject to approved awards rules and category guidelines.
-          </div>
-        </div>
+          <!-- FAQ 02 -->
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+              <span class="faq-number">02</span>
+              <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                <span class="faq-topic-tag">GOVERNANCE & JURY</span>
+                <span class="faq-title">Can a jury member's organisation participate?</span>
+              </div>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-2">
+              <p>Yes — but the jury member cannot evaluate their own entry. Each entry is reviewed by 3–4 jury members.</p>
+            </div>
+          </article>
 
-        <div class="faq-accordion-item">
-          <button class="faq-question-header" aria-expanded="false">
-            <span>What supporting documents are required?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer-body">
-            You may upload PDF decks, PPT presentations, video links, or public URLs demonstrating measurable impact and campaign results.
-          </div>
-        </div>
+          <!-- FAQ 03 -->
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+              <span class="faq-number">03</span>
+              <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                <span class="faq-topic-tag">TIMELINE & DATES</span>
+                <span class="faq-title">What are the important dates?</span>
+              </div>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-3">
+              <p style="margin-bottom: 1.5rem; font-weight: 600; color: var(--black);">Early Bird: XX/XX/XXXX · Final Deadline: XX/XX/XXXX · Jury Meeting & Awards Night: TBA</p>
+              
+              <div class="faq-dates-grid">
+                <div class="faq-date-card">
+                  <span class="faq-date-label">Early Bird</span>
+                  <span class="faq-date-val">XX/XX/XXXX</span>
+                </div>
+                <div class="faq-date-card">
+                  <span class="faq-date-label">Final Deadline</span>
+                  <span class="faq-date-val">XX/XX/XXXX</span>
+                </div>
+                <div class="faq-date-card">
+                  <span class="faq-date-label">Jury Meeting & Awards Night</span>
+                  <span class="faq-date-val">TBA</span>
+                </div>
+              </div>
+            </div>
+          </article>
 
-        <div class="faq-accordion-item">
-          <button class="faq-question-header" aria-expanded="false">
-            <span>Can I save my nomination and return later?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer-body">
-            Yes! This prototype uses localStorage to automatically save your progress on your browser.
-          </div>
-        </div>
+          <!-- FAQ 04 -->
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+              <span class="faq-number">04</span>
+              <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                <span class="faq-topic-tag">SELECTION PROCESS</span>
+                <span class="faq-title">How are winners selected?</span>
+              </div>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-4">
+              <p style="margin-bottom: 1.5rem; font-weight: 600; color: var(--black);">Eligible entries reviewed by the Jury → Shortlisted nominees evaluated by the Grand Jury → Winners announced at the Awards Ceremony.</p>
+              
+              <div class="faq-process-line">
+                <div class="faq-process-step">
+                  <span class="faq-process-heading">Eligible entries</span>
+                  <span class="faq-process-desc">Reviewed by the Jury</span>
+                </div>
+                <span class="faq-process-arrow">→</span>
+                <div class="faq-process-step">
+                  <span class="faq-process-heading">Shortlisted nominees</span>
+                  <span class="faq-process-desc">Evaluated by the Grand Jury</span>
+                </div>
+                <span class="faq-process-arrow">→</span>
+                <div class="faq-process-step">
+                  <span class="faq-process-heading">Winners</span>
+                  <span class="faq-process-desc">Announced at Awards Ceremony</span>
+                </div>
+              </div>
+            </div>
+          </article>
 
-        <div class="faq-accordion-item">
-          <button class="faq-question-header" aria-expanded="false">
-            <span>Can I edit my application after final submission?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer-body">
-            ()
-          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="faq-accordion-item">
-          <button class="faq-question-header" aria-expanded="false">
-            <span>What is the entry deadline?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer-body">
-            ()
-          </div>
+    <!-- SUPPORT / CONTACT CTA SECTION -->
+    <section style="background-color: var(--black); color: var(--white); padding-block: 6rem; position: relative; overflow: hidden; border-top: 1px solid var(--gold-border);">
+      <div class="container" style="max-width: 860px; text-align: center; position: relative; z-index: 2;">
+        <span class="micro-label" style="color: var(--gold); font-weight: 800; letter-spacing: 0.15em; display: block; margin-bottom: 0.75rem;">SECRETARIAT SUPPORT</span>
+        <h2 style="font-size: clamp(2.25rem, 4vw, 3.5rem); font-weight: 800; color: var(--white); margin-bottom: 1.25rem; line-height: 1.1;">
+          Still have questions regarding your entry?
+        </h2>
+        <p style="font-size: 1.125rem; color: var(--text-muted-dark); max-width: 680px; margin-inline: auto; margin-bottom: 2.5rem; line-height: 1.6;">
+          Our dedicated awards secretariat team is available to assist you with category selection, eligibility guidelines, and document submission requirements.
+        </p>
+        <div style="display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-weight: 800;">CONTACT SECRETARIAT →</a>
+          <a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener" class="btn btn-outline-dark" style="padding: 1rem 2.5rem; border-color: var(--white); color: var(--white); font-weight: 800;">REGISTER NOW →</a>
         </div>
-
-        <div class="faq-accordion-item">
-          <button class="faq-question-header" aria-expanded="false">
-            <span>When will finalists and winners be announced?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer-body">
-            ()
-          </div>
-        </div>
-
-        <div style="margin-top: 3.5rem; text-align: center; padding: 3rem; background-color: var(--force-primary-tint); border-radius: 4px; border: 1px solid var(--force-border);">
-          <h3>STILL NEED HELP?</h3>
-          <p style="margin-block: 0.5rem 1.5rem; color: var(--force-gray-700);">Our awards secretariat team is available for any queries.</p>
-          <a href="contact.html" class="btn btn-primary">CONTACT US →</a>
-        </div>
-
       </div>
     </section>
   </main>
 
+  <!-- GLOBAL FOOTER -->
   <footer class="site-footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-title"><span class="text-gold">TRAVEL AND TOURISM AWARDS</span> 2026</div>
+          <p class="footer-tagline">Celebrating excellence across India’s travel and tourism ecosystem.</p>
+        </div>
+
+        <div>
+          <div class="footer-col-heading">NAVIGATION</div>
+          <ul class="footer-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener">REGISTER</a></li>
+            <li><a href="categories.html">CATEGORIES</a></li>
+            <li><a href="rules.html">RULES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-heading">PARTICIPATE</div>
+          <ul class="footer-links">
+            <li><a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener">REGISTER NOW</a></li>
+            <li><a href="categories.html">VIEW CATEGORIES</a></li>
+            <li><a href="rules.html">RULES & GUIDELINES</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-heading">FORCE MOTORS</div>
+          <ul class="footer-links">
+            <li><a href="about.html">ABOUT FORCE MOTORS</a></li>
+            <li><a href="https://www.forcemotors.com" target="_blank" rel="noopener">OFFICIAL WEBSITE ()</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-heading">CONNECT</div>
+          <ul class="footer-links">
+            <li><a href="rules.html">FORCE MOTORS ()</a></li>
+            <li><a href="https://forms.gle/sW1JJXMcxDuPuCFt5" target="_blank" rel="noopener">REGISTRATION SUPPORT ()</a></li>
+            <li><a href="faq.html">HELP CENTER</a></li>
+          </ul>
+        </div>
+      </div>
+
       <div class="footer-bottom">
-        <div>© 2026 Travel Awards. All rights reserved. ()</div>
+        <div>© 2026 <span class="text-gold">Travel and Tourism Awards</span>. Force Motors. All rights reserved. ()</div>
+        <div class="footer-bottom-links">
+          <a href="rules.html">PRIVACY POLICY ()</a>
+          <a href="rules.html">TERMS & CONDITIONS ()</a>
+        </div>
       </div>
     </div>
   </footer>

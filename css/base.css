@@ -27,6 +27,16 @@ body {
   min-height: 100vh;
 }
 
+main {
+  padding-top: var(--header-height-desktop);
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding-top: var(--header-height-mobile);
+  }
+}
+
 /* Typography Scale (Fluid clamp) */
 h1, .h1 {
   font-family: var(--font-primary);
@@ -124,6 +134,17 @@ img, svg {
   }
 }
 
+/* Utility Classes */
+.text-gold {
+  color: var(--gold) !important;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (max-width: 767px) {
   .container {
     padding-inline: 1.25rem; /* 20px mobile */
@@ -159,6 +180,6 @@ img, svg {
 
 /* Accessibility Focus States */
 :focus-visible {
-  outline: 2px solid var(--force-primary);
+  outline: 2px solid var(--gold);
   outline-offset: 4px;
 }

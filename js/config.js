@@ -3,10 +3,10 @@
  * Separates brand values from legal copy & content architecture.
  */
 const BRAND_CONFIG = {
-  awardName: "Times Travel Awards",
+  awardName: "Times Travel and Tourism Awards",
   presentingPartner: "Force Motors",
-  awardOwner: "Bennett Coleman & Co. Ltd. (BCCL)",
-  awardsManagement: "BCCL & Appointed Secretariat ()",
+  awardOwner: "Force Motors",
+  awardsManagement: "Force Motors & Appointed Secretariat ()",
   officialHashtag: "#TimesTravelAwards",
   edition: "2026",
   

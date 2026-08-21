@@ -29,7 +29,19 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding-inline: clamp(20px, 3vw, 48px);
+  padding-inline: 4rem;
+}
+
+@media (max-width: 991px) {
+  .header-container {
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-container {
+    padding-inline: 1.25rem;
+  }
 }
 
 .header-brand-group {
@@ -37,6 +49,24 @@
   align-items: center;
   gap: 1.25rem;
   flex-shrink: 0;
+}
+
+.site-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-brand-logo {
+  height: 98px;
+  width: auto;
+  max-width: 280px;
+  object-fit: contain;
+  transition: height var(--transition-smooth);
+}
+
+.site-header.scrolled .nav-brand-logo {
+  height: 75px;
 }
 
 .awards-logo-text {
@@ -155,6 +185,10 @@
   flex-direction: column;
   gap: 6px;
   border-radius: 4px;
+  z-index: 1001;
+  cursor: pointer;
+  background: transparent;
+  border: none;
 }
 
 .mobile-nav-toggle span {
@@ -162,12 +196,12 @@
   width: 24px;
   height: 2px;
   background-color: var(--black);
-  transition: transform var(--transition-fast), opacity var(--transition-fast);
+  transition: transform var(--transition-fast), opacity var(--transition-fast), background-color var(--transition-fast);
 }
 
 .mobile-nav-toggle.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
-  background-color: var(--white);
+  background-color: var(--black);
 }
 
 .mobile-nav-toggle.open span:nth-child(2) {
@@ -176,7 +210,7 @@
 
 .mobile-nav-toggle.open span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-  background-color: var(--white);
+  background-color: var(--black);
 }
 
 /* Mobile Drawer Overlay - Black Premium Theme */
@@ -198,6 +232,29 @@
 
 .mobile-nav-drawer.open {
   transform: translateX(0);
+}
+
+.jury-slider-controls,
+.partners-slider-controls {
+  display: none;
+}
+
+.category-nomination-prompt-bar {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 2.5rem 3rem;
+  border-radius: 6px;
+  border: 1px solid var(--gold-border);
+  gap: 2rem;
+}
+
+.category-nomination-prompt-bar .prompt-cta-btn {
+  padding-inline: 2rem;
+  flex-shrink: 0;
 }
 
 .mobile-nav-links {

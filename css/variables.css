@@ -62,9 +62,9 @@
 
   /* Spacing & Layout */
   --site-max-width: 1440px;
-  --header-height-desktop: 92px;
-  --header-height-scrolled: 76px;
-  --header-height-mobile: 68px;
+  --header-height-desktop: 110px;
+  --header-height-scrolled: 85px;
+  --header-height-mobile: 75px;
 
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);

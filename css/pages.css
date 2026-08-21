@@ -21,33 +21,29 @@
 }
 
 .hero-bg-stage {
-  background-image: url('../assets/gallery_photo_8.png');
+  background-image: url('../assets/hero_awards_bg.png');
   background-size: cover;
-  background-position: center right;
+  background-position: 55% 65%;
   background-repeat: no-repeat;
 }
 
 .hero-gradient-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(10, 10, 10, 0.96) 0%,
-    rgba(10, 10, 10, 0.88) 38%,
-    rgba(10, 10, 10, 0.4) 68%,
-    rgba(10, 10, 10, 0.1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(10, 10, 10, 0.96) 0%,
+      rgba(10, 10, 10, 0.88) 38%,
+      rgba(10, 10, 10, 0.4) 68%,
+      rgba(10, 10, 10, 0.1) 100%);
   z-index: 1;
 }
 
 @media (max-width: 768px) {
   .hero-gradient-overlay {
-    background: linear-gradient(
-      180deg,
-      rgba(10, 10, 10, 0.95) 0%,
-      rgba(10, 10, 10, 0.85) 60%,
-      rgba(10, 10, 10, 0.6) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(10, 10, 10, 0.95) 0%,
+        rgba(10, 10, 10, 0.85) 60%,
+        rgba(10, 10, 10, 0.6) 100%);
   }
 }
 
@@ -144,7 +140,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10,10,10,0.1) 0%, rgba(10,10,10,0.4) 100%);
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.1) 0%, rgba(10, 10, 10, 0.4) 100%);
   pointer-events: none;
 }
 
@@ -672,7 +668,9 @@
   margin-left: 2px;
 }
 
-.form-input, .form-select, .form-textarea {
+.form-input,
+.form-select,
+.form-textarea {
   width: 100%;
   min-height: 52px;
   padding: 0.875rem 1.125rem;
@@ -692,14 +690,18 @@
   resize: vertical;
 }
 
-.form-input:focus, .form-select:focus, .form-textarea:focus {
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
   border-color: var(--gold);
   background-color: var(--white);
   outline: none;
   box-shadow: 0 0 0 3px rgba(198, 161, 91, 0.18);
 }
 
-.form-input.error, .form-select.error, .form-textarea.error {
+.form-input.error,
+.form-select.error,
+.form-textarea.error {
   border-color: #d9534f;
   background-color: #fff8f8;
 }
@@ -754,7 +756,8 @@
   transition: all var(--transition-fast);
 }
 
-.toc-link:hover, .toc-link.active {
+.toc-link:hover,
+.toc-link.active {
   border-left-color: var(--gold);
   color: var(--black);
   background-color: var(--gold-soft);
@@ -770,7 +773,8 @@
   scroll-margin-top: calc(var(--header-height-desktop) + 2rem);
 }
 
-.rule-note, .rules-callout {
+.rule-note,
+.rules-callout {
   background: var(--gold-soft);
   border-left: 3px solid var(--gold);
   padding: 1.25rem 1.5rem;
@@ -823,7 +827,9 @@
   justify-content: space-between;
 }
 
-.lightbox-close-btn, .lightbox-prev-btn, .lightbox-next-btn {
+.lightbox-close-btn,
+.lightbox-prev-btn,
+.lightbox-next-btn {
   color: var(--white);
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
@@ -857,7 +863,8 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
 }
 
-.faq-item:hover, .faq-item.open {
+.faq-item:hover,
+.faq-item.open {
   border-color: var(--gold);
   box-shadow: 0 10px 30px rgba(198, 161, 91, 0.08);
 }
@@ -922,9 +929,9 @@
   line-height: 1.7;
   border-top: 1px dashed transparent;
   transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-              opacity 0.35s ease,
-              padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-              border-color 0.3s ease;
+    opacity 0.35s ease,
+    padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.3s ease;
 }
 
 .faq-item.open .faq-answer {
@@ -1180,7 +1187,7 @@
   direction: rtl;
 }
 
-.process-step-row-reverse > * {
+.process-step-row-reverse>* {
   direction: ltr;
 }
 
@@ -1289,7 +1296,9 @@
 }
 
 @media (max-width: 991px) {
-  .process-step-row, .process-step-row-reverse {
+
+  .process-step-row,
+  .process-step-row-reverse {
     grid-template-columns: 1fr;
     direction: ltr;
     gap: 1.5rem;
@@ -1382,15 +1391,18 @@
 .storyboard-scroll-wrapper {
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE */
   padding-block: 1rem 2rem;
   margin-inline: -1rem;
   padding-inline: 1rem;
 }
 
 .storyboard-scroll-wrapper::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
+  /* Chrome/Safari */
 }
 
 .storyboard-track {
@@ -1415,7 +1427,8 @@
   scroll-snap-align: start;
 }
 
-.storyboard-card.active, .storyboard-card:hover {
+.storyboard-card.active,
+.storyboard-card:hover {
   border-color: var(--gold);
   transform: translateY(-6px);
   box-shadow: 0 16px 36px rgba(198, 161, 91, 0.12);

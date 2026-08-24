@@ -39,11 +39,11 @@ main {
 
 /* Typography Scale (Fluid clamp) */
 h1, .h1 {
-  font-family: var(--font-primary);
+  font-family: var(--font-heading);
   font-size: clamp(2.875rem, 6vw, 6rem); /* 46px - 96px */
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
 }
 
@@ -55,21 +55,22 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-family: var(--font-primary);
+  font-family: var(--font-heading);
   font-size: clamp(2.125rem, 4.5vw, 4rem); /* 34px - 64px */
   font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.015em;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
 
 h3, .h3 {
-  font-family: var(--font-primary);
+  font-family: var(--font-heading);
   font-size: clamp(1.5rem, 2.5vw, 2.25rem); /* 24px - 36px */
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.25;
 }
 
 h4, .h4 {
+  font-family: var(--font-heading);
   font-size: clamp(1.25rem, 1.8vw, 1.5rem);
   font-weight: 600;
   line-height: 1.3;

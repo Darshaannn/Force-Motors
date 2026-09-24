@@ -443,42 +443,89 @@
    -------------------------------------------------------------------------- */
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1.25rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
 }
 
 .partner-card {
-  border: 1px solid var(--border-light);
-  padding: 1.5rem 1rem;
+  padding: 2rem 1.25rem;
+  background-color: var(--force-white, #ffffff);
+  border: 1px solid var(--force-border, #e2e8f0);
+  border-radius: 12px;
   text-align: center;
-  border-radius: 4px;
-  background-color: var(--white);
-  transition: border-color var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  min-height: 200px;
 }
 
 .partner-card:hover {
-  border-color: var(--gold-border);
+  transform: translateY(-5px);
+  border-color: var(--force-primary, #1664ab);
+  box-shadow: 0 12px 28px rgba(22, 100, 171, 0.12);
 }
 
-.partner-role {
+.partner-card.featured-partner {
+  border: 2px solid var(--force-primary, #1664ab);
+  box-shadow: 0 8px 24px rgba(22, 100, 171, 0.14);
+  background: linear-gradient(180deg, #ffffff 0%, rgba(22, 100, 171, 0.03) 100%);
+}
+
+.partner-logo-box {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.partner-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.04));
+  transition: transform 0.25s ease;
+}
+
+.partner-card:hover .partner-logo-img {
+  transform: scale(1.06);
+}
+
+.partner-role-badge {
   font-size: 0.6875rem;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gold-dark);
-  margin-bottom: 0.75rem;
+  color: var(--force-gray-500, #64748b);
+  display: block;
 }
 
-.partner-name-placeholder {
-  font-size: 1.125rem;
+.partner-card.featured-partner .partner-role-badge {
+  background-color: var(--force-primary, #1664ab);
+  color: #ffffff;
+  padding: 0.3rem 0.75rem;
+  border-radius: 40px;
+  font-size: 0.625rem;
+}
+
+.partner-tagline {
+  font-size: 0.75rem;
   font-weight: 700;
-  color: var(--black);
+  color: var(--force-gray-600, #475569);
+  margin-top: 0.75rem;
 }
 
-.partner-card.featured-partner {
-  border-color: var(--gold-border);
-  background-color: var(--gold-soft);
+.partner-card.featured-partner .partner-tagline {
+  color: var(--force-primary, #1664ab);
+  font-weight: 800;
 }
 
 /* --------------------------------------------------------------------------

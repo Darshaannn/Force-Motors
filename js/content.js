@@ -12,7 +12,7 @@ const CONTENT = {
   definitions: [
     { term: "Awards", definition: "Travel and Tourism Excellence Awards presented by Force Motors." },
     { term: "Owner of the Awards", definition: "Force Motors" },
-    { term: "Awards Management", definition: "Force Motors and designated event management secretariats ()" },
+    { term: "Awards Management", definition: "Force Motors and designated event management secretariats" },
     { term: "Applicant / Nominee", definition: "Any company / organisation / initiative submitting a entry in accordance with these rules." },
     { term: "Screening Jury", definition: "An independent expert panel constituted by Awards Management to inspect entries for eligibility and completeness." },
     { term: "Final Jury", definition: "An independent grand jury panel appointed to evaluate shortlisted nominees and select final winners." },

@@ -413,6 +413,10 @@ img, video, canvas, svg {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+  .partners-subtext {
+    white-space: normal !important;
+  }
 }
 
 /* Small Mobile (<480px) */

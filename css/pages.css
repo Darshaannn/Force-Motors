@@ -69,16 +69,7 @@
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.hero-label::before {
-  content: '';
-  width: 20px;
-  height: 2px;
-  background-color: var(--gold);
+  display: block;
 }
 
 .hero-title {

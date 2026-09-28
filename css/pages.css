@@ -1632,6 +1632,29 @@
   transform: translateX(4px);
 }
 
+.key-info-card-action {
+  background: linear-gradient(135deg, #181818 0%, #111111 100%);
+  border: 1px solid var(--gold-border);
+  color: var(--white);
+}
+
+.key-info-card-action .key-info-card-title {
+  color: var(--white);
+}
+
+.key-info-card-action .key-info-card-desc {
+  color: var(--text-muted-dark);
+}
+
+.key-info-card-action .key-info-cta {
+  color: var(--gold);
+}
+
+.key-info-card-action:hover {
+  border-color: var(--gold);
+  box-shadow: 0 14px 32px rgba(198, 161, 91, 0.2);
+}
+
 .key-info-card-cta {
   background-color: var(--black);
   border-color: var(--gold-border);

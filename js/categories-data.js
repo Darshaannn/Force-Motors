@@ -1,19 +1,19 @@
 /**
  * CATEGORIES_DATA
- * Central canonical data source for the 6 main award headings and 25 sub-awards.
+ * Central canonical data source for the 6 main award headings and 23 sub-awards.
  */
 const CATEGORIES_DATA = [
   {
     id: "travel-enablers",
     groupNumber: "01",
     groupName: "Travel Enablers",
-    summary: "Connecting journeys through infrastructure, mobility, transportation and airline excellence.",
+    summary: "Recognising operators driving seamless mobility, pilgrimage journeys, and fleet excellence.",
     subcategories: [
-      "Domestic Airline",
-      "Car Rental App",
-      "Cruise Liners"
+      "Best Pilgrimage Operator",
+      "Best Fleet Operator",
+      "Best Travel Operator of the Year"
     ],
-    eligibility: "Open to registered airlines, car rental platforms, and cruise liners operating within India or carrying Indian passengers during the eligible period.",
+    eligibility: "Open to registered pilgrimage operators, fleet operators, and travel operators operating within India.",
     evaluationCriteria: "Operational efficiency, fleet reliability, passenger safety records, digital booking integration, guest feedback, and innovation in route connectivity.",
     requirements: ["Company Registration Certificate", "Fleet/Route Network Overview", "Passenger Satisfaction Metrics", "Case Study Summary (max 1000 words)"]
   },
@@ -21,12 +21,12 @@ const CATEGORIES_DATA = [
     id: "hospitality",
     groupNumber: "02",
     groupName: "Hospitality",
-    summary: "Recognising hotels, resorts, and heritage stays delivering exceptional guest experiences.",
+    summary: "Recognising hotels, resorts, heritage properties, and homestays delivering exceptional guest experiences.",
     subcategories: [
-      "Budget Hotel",
-      "Five-Star Hotel",
-      "Heritage Hotel",
-      "Home Stays"
+      "Best Budget Hotel",
+      "Best Five-Star Hotel",
+      "Best Heritage Hotel",
+      "Best Home Stay"
     ],
     eligibility: "Open to licensed budget properties, Five-Star hotels, heritage properties, and homestays operational in India.",
     evaluationCriteria: "Guest satisfaction scores, architectural preservation (for heritage), service standards, eco-friendly practices, and culinary excellence.",
@@ -36,13 +36,14 @@ const CATEGORIES_DATA = [
     id: "tourism-adventure",
     groupNumber: "03",
     groupName: "Tourism & Adventure",
-    summary: "Celebrating destination creators, theme parks, tour operators, and adventure facilitators.",
+    summary: "Celebrating destination creators, attraction destinations, and tour operators across India and abroad.",
     subcategories: [
-      "Theme Attraction Destination",
-      "Domestic Tour Operator",
-      "International Tour Operator"
+      "Best Theme Attraction Destination",
+      "Best Domestic Tour Operator*",
+      "Best International Tour Operator*",
+      "Best Self Drive Tour Operator"
     ],
-    eligibility: "Open to theme parks, destination management companies, domestic and international tour operators.",
+    eligibility: "Open to theme parks, destination creators, domestic, international, and self-drive tour operators.",
     evaluationCriteria: "Visitor footfall, safety standards, unique itinerary design, guide training, and guest satisfaction.",
     requirements: ["Operating License / Safety Certification", "Annual Visitor Statistics", "Safety Protocol Document", "Tour Itinerary Deck"]
   },
@@ -50,14 +51,13 @@ const CATEGORIES_DATA = [
     id: "marketing-excellence",
     groupNumber: "04",
     groupName: "Marketing Excellence",
-    summary: "Recognising impactful campaigns that inspired travel and destination discovery.",
+    summary: "Recognising impactful tourism campaigns, tour operators, and rural connectivity initiatives.",
     subcategories: [
-      "International Tourism Board",
-      "Domestic Tourism Board",
-      "Tour Operator",
-      "Airline"
+      "Best Domestic Tourism Board",
+      "Best Tour Operator",
+      "Best Rural Connectivity Operator"
     ],
-    eligibility: "Open to international and domestic tourism boards, tour operators, and airlines running marketing campaigns targeted at or within India.",
+    eligibility: "Open to domestic tourism boards, tour operators, and rural connectivity operators promoting travel within India.",
     evaluationCriteria: "Creative strategy, campaign reach, return on ad spend (ROAS), engagement metrics, and actual impact on visitor numbers.",
     requirements: ["Campaign Deck / Creative Samples", "Media Reach & Engagement Report", "Measurable Business Impact Data"]
   },
@@ -65,34 +65,31 @@ const CATEGORIES_DATA = [
     id: "travel-tech",
     groupNumber: "05",
     groupName: "Travel Tech",
-    summary: "Honouring travel booking platforms, digital applications, pilgrimage operators, sustainability, and safety.",
+    summary: "Honouring travel booking platforms, startups, sustainable operators, and digital innovators.",
     subcategories: [
-      "Travel Booking Website",
-      "Travel Application",
+      "Best Travel Booking Website",
       "Best Startup in Travel Space",
-      "Best Pilgrimage Operators",
-      "Best Use of Sustainability",
-      "Safety Excellence Award"
+      "Best Use of Sustainability by Travel Operator",
+      "Digital Innovation Award"
     ],
-    eligibility: "Open to travel booking portals, applications, startups, pilgrimage operators, sustainability initiatives, and safety programs.",
-    evaluationCriteria: "User interface design, booking conversion rates, customer support resolution, app performance, tech innovation, sustainability, and safety compliance.",
+    eligibility: "Open to travel booking portals, tech startups, travel operators implementing sustainability, and digital innovators.",
+    evaluationCriteria: "User interface design, booking conversion rates, tech innovation, sustainability practices, and digital transformation.",
     requirements: ["App/Website Analytics Overview", "Customer Service SLA Summary", "Product Feature Walkthrough", "Sustainability / Safety Documentation"]
   },
   {
     id: "special-categories",
     groupNumber: "06",
     groupName: "Special Categories",
-    summary: "Honouring regional connectivity, infrastructure milestones, visionary leaders, and special recognition.",
+    summary: "Honouring visionary industry leaders, rising star operators, brand loyalty, and green mobility pioneers.",
     subcategories: [
-      "Editor's Choice: Airports, Upcoming Destination",
       "Lifetime Achievement Award",
       "Rising Star Operator",
-      "Force Traveller Loyalty Award",
-      "Best Rural Connectivity Operator"
+      "Force Traveler Loyalty Award",
+      "Green Mobility Award"
     ],
-    eligibility: "Open to airports, regional operators, emerging tourism destinations, industry veterans, and rural mobility enablers.",
-    evaluationCriteria: "Infrastructure impact, regional development, engagement metrics, innovation, and lifelong contribution to Indian travel.",
-    requirements: ["Profile / Infrastructure Overview", "Rural / Regional Route Metrics", "Portfolio & Impact Proof"]
+    eligibility: "Open to industry veterans, emerging tour operators, Force Traveller loyalty partners, and green mobility advocates.",
+    evaluationCriteria: "Industry impact, sustainable mobility, loyalty excellence, and lifelong contribution to Indian travel.",
+    requirements: ["Profile / Infrastructure Overview", "Impact Proof & Case Study", "Fleet / Sustainability Overview"]
   }
 ];
 

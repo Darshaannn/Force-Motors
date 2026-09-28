@@ -3,7 +3,7 @@
  * Separates brand values from legal copy & content architecture.
  */
 const BRAND_CONFIG = {
-  awardName: "Travel and Tourism Excellence Awards",
+  awardName: "Travel and Tourism Awards",
   presentingPartner: "Force Motors",
   awardOwner: "Force Motors",
   awardsManagement: "Force Motors & Appointed Secretariat ()",

@@ -4,7 +4,7 @@
 // ==========================================================================
 
 const GALLERY_ITEMS = [
-  { id: 1, category: 'awards', title: 'Travel and Tourism Awards Ceremony 2026', tag: 'AWARDS NIGHT', image: 'assets/gallery_photo_8.png' },
+  { id: 1, category: 'awards', title: 'Travel and Tourism Excellence Awards Ceremony 2026', tag: 'AWARDS NIGHT', image: 'assets/gallery_photo_8.png' },
   { id: 2, category: 'final', title: 'Jury Roundtable & Deliberation Panel', tag: 'JURY EVALUATION', image: 'assets/gallery_photo_7.png' },
   { id: 3, category: 'awards', title: 'Winner Announcement & Trophy Presentation', tag: 'CEREMONY', image: 'assets/gallery_photo_1.png' },
   { id: 4, category: 'screening', title: 'Delegates & Industry Leaders Networking', tag: 'DELEGATES GALA', image: 'assets/gallery_photo_2.png' },

@@ -3,11 +3,11 @@
  * Separates brand values from legal copy & content architecture.
  */
 const BRAND_CONFIG = {
-  awardName: "Times Travel and Tourism Awards",
+  awardName: "Travel and Tourism Excellence Awards",
   presentingPartner: "Force Motors",
   awardOwner: "Force Motors",
   awardsManagement: "Force Motors & Appointed Secretariat ()",
-  officialHashtag: "#TimesTravelAwards",
+  officialHashtag: "#TravelExcellenceAwards",
   edition: "2026",
   
   dates: {

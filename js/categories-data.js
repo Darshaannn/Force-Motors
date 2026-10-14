@@ -26,7 +26,8 @@ const CATEGORIES_DATA = [
       "Best Budget Hotel",
       "Best Five-Star Hotel",
       "Best Heritage Hotel",
-      "Best Home Stay"
+      "Best Home Stay",
+      "Best Eco-Tourism"
     ],
     eligibility: "Open to licensed budget properties, Five-Star hotels, heritage properties, and homestays operational in India.",
     evaluationCriteria: "Guest satisfaction scores, architectural preservation (for heritage), service standards, eco-friendly practices, and culinary excellence.",
@@ -67,9 +68,8 @@ const CATEGORIES_DATA = [
     groupName: "Travel Tech",
     summary: "Honouring travel booking platforms, startups, sustainable operators, and digital innovators.",
     subcategories: [
-      "Best Travel Booking Website",
+      "Best Travel Aggregator",
       "Best Startup in Travel Space",
-      "Best Use of Sustainability by Travel Operator",
       "Digital Innovation Award"
     ],
     eligibility: "Open to travel booking portals, tech startups, travel operators implementing sustainability, and digital innovators.",
@@ -82,10 +82,11 @@ const CATEGORIES_DATA = [
     groupName: "Special Categories",
     summary: "Honouring visionary industry leaders, rising star operators, brand loyalty, and green mobility pioneers.",
     subcategories: [
-      "Lifetime Achievement Award",
+      "Force Achievement Award",
       "Rising Star Operator",
       "Force Traveler Loyalty Award",
-      "Green Mobility Award"
+      "Sustainability Champion Award",
+      "Healthcare Focused Awards"
     ],
     eligibility: "Open to industry veterans, emerging tour operators, Force Traveller loyalty partners, and green mobility advocates.",
     evaluationCriteria: "Industry impact, sustainable mobility, loyalty excellence, and lifelong contribution to Indian travel.",

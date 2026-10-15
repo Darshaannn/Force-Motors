@@ -84,7 +84,7 @@ const CATEGORIES_DATA = [
     subcategories: [
       "Force Achievement Award",
       "Rising Star Operator",
-      "Force Traveler Loyalty Award",
+      "Force Miles of Trust Award",
       "Sustainability Champion Award",
       "Healthcare Focused Awards"
     ],

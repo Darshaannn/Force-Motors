@@ -201,7 +201,7 @@ const CONTENT = {
           ]
         },
         {
-          title: "Force Traveller Loyalty Award",
+          title: "Force Miles of Trust Award",
           eligibility: [
             "Special recognition for long-standing fleet partners and operators exemplifying commitment to passenger mobility."
           ]

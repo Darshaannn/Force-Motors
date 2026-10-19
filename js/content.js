@@ -47,33 +47,38 @@ const CONTENT = {
       ]
     },
     {
-      id: "hospitality",
+      id: "special-categories",
       number: "02",
-      name: "Hospitality",
+      name: "Special Categories",
       awards: [
         {
-          title: "Budget Hotel",
+          title: "Editor's Choice: Airports, Upcoming Destination",
           eligibility: [
-            "Open to budget properties, chains, and hotel aggregators operating in India."
+            "Editorially nominated award recognizing outstanding airport infrastructure and emerging destination milestones."
           ]
         },
         {
-          title: "Five-Star Hotel",
+          title: "Lifetime Achievement Award",
           eligibility: [
-            "Open to luxury 5-star hotels and resort properties operating in India.",
-            "Must hold valid star accreditation from statutory authorities."
+            "Honorary award celebrating individuals who have made lifelong contributions to the Indian travel industry."
           ]
         },
         {
-          title: "Heritage Hotel",
+          title: "Rising Star Operator",
           eligibility: [
-            "Open to certified heritage hotel properties preserving historic Indian architecture."
+            "Open to promising new tour or mobility operators demonstrating rapid growth and operational excellence."
           ]
         },
         {
-          title: "Home Stays",
+          title: "Force Miles of Trust Award",
           eligibility: [
-            "Open to accredited homestays, bed & breakfast properties, and experiential accommodation facilitators across India."
+            "Special recognition for long-standing fleet partners and operators exemplifying commitment to passenger mobility."
+          ]
+        },
+        {
+          title: "Best Rural Connectivity Operator",
+          eligibility: [
+            "Open to fleet operators and transport enablers expanding vital last-mile mobility to remote and rural regions in India."
           ]
         }
       ]
@@ -178,38 +183,33 @@ const CONTENT = {
       ]
     },
     {
-      id: "special-categories",
+      id: "hospitality",
       number: "06",
-      name: "Special Categories",
+      name: "Hospitality",
       awards: [
         {
-          title: "Editor's Choice: Airports, Upcoming Destination",
+          title: "Budget Hotel",
           eligibility: [
-            "Editorially nominated award recognizing outstanding airport infrastructure and emerging destination milestones."
+            "Open to budget properties, chains, and hotel aggregators operating in India."
           ]
         },
         {
-          title: "Lifetime Achievement Award",
+          title: "Five-Star Hotel",
           eligibility: [
-            "Honorary award celebrating individuals who have made lifelong contributions to the Indian travel industry."
+            "Open to luxury 5-star hotels and resort properties operating in India.",
+            "Must hold valid star accreditation from statutory authorities."
           ]
         },
         {
-          title: "Rising Star Operator",
+          title: "Heritage Hotel",
           eligibility: [
-            "Open to promising new tour or mobility operators demonstrating rapid growth and operational excellence."
+            "Open to certified heritage hotel properties preserving historic Indian architecture."
           ]
         },
         {
-          title: "Force Miles of Trust Award",
+          title: "Home Stays",
           eligibility: [
-            "Special recognition for long-standing fleet partners and operators exemplifying commitment to passenger mobility."
-          ]
-        },
-        {
-          title: "Best Rural Connectivity Operator",
-          eligibility: [
-            "Open to fleet operators and transport enablers expanding vital last-mile mobility to remote and rural regions in India."
+            "Open to accredited homestays, bed & breakfast properties, and experiential accommodation facilitators across India."
           ]
         }
       ]

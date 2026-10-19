@@ -18,20 +18,20 @@ const CATEGORIES_DATA = [
     requirements: ["Company Registration Certificate", "Fleet/Route Network Overview", "Passenger Satisfaction Metrics", "Case Study Summary (max 1000 words)"]
   },
   {
-    id: "hospitality",
+    id: "special-categories",
     groupNumber: "02",
-    groupName: "Hospitality",
-    summary: "Recognising hotels, resorts, heritage properties, and homestays delivering exceptional guest experiences.",
+    groupName: "Special Categories",
+    summary: "Honouring visionary industry leaders, rising star operators, brand loyalty, and green mobility pioneers.",
     subcategories: [
-      "Best Budget Hotel",
-      "Best Five-Star Hotel",
-      "Best Heritage Hotel",
-      "Best Home Stay",
-      "Best Eco-Tourism"
+      "Force Achievement Award",
+      "Rising Star Operator",
+      "Force Miles of Trust Award",
+      "Sustainability Champion Award",
+      "Healthcare Focused Awards"
     ],
-    eligibility: "Open to licensed budget properties, Five-Star hotels, heritage properties, and homestays operational in India.",
-    evaluationCriteria: "Guest satisfaction scores, architectural preservation (for heritage), service standards, eco-friendly practices, and culinary excellence.",
-    requirements: ["Star / Heritage / Homestay Accreditation", "Guest Review Summary", "Property Portfolio Showcase", "Sustainability & Community Initiatives"]
+    eligibility: "Open to industry veterans, emerging tour operators, Force Traveller loyalty partners, and green mobility advocates.",
+    evaluationCriteria: "Industry impact, sustainable mobility, loyalty excellence, and lifelong contribution to Indian travel.",
+    requirements: ["Profile / Infrastructure Overview", "Impact Proof & Case Study", "Fleet / Sustainability Overview"]
   },
   {
     id: "tourism-adventure",
@@ -77,20 +77,20 @@ const CATEGORIES_DATA = [
     requirements: ["App/Website Analytics Overview", "Customer Service SLA Summary", "Product Feature Walkthrough", "Sustainability / Safety Documentation"]
   },
   {
-    id: "special-categories",
+    id: "hospitality",
     groupNumber: "06",
-    groupName: "Special Categories",
-    summary: "Honouring visionary industry leaders, rising star operators, brand loyalty, and green mobility pioneers.",
+    groupName: "Hospitality",
+    summary: "Recognising hotels, resorts, heritage properties, and homestays delivering exceptional guest experiences.",
     subcategories: [
-      "Force Achievement Award",
-      "Rising Star Operator",
-      "Force Miles of Trust Award",
-      "Sustainability Champion Award",
-      "Healthcare Focused Awards"
+      "Best Budget Hotel",
+      "Best Five-Star Hotel",
+      "Best Heritage Hotel",
+      "Best Home Stay",
+      "Best Eco-Tourism"
     ],
-    eligibility: "Open to industry veterans, emerging tour operators, Force Traveller loyalty partners, and green mobility advocates.",
-    evaluationCriteria: "Industry impact, sustainable mobility, loyalty excellence, and lifelong contribution to Indian travel.",
-    requirements: ["Profile / Infrastructure Overview", "Impact Proof & Case Study", "Fleet / Sustainability Overview"]
+    eligibility: "Open to licensed budget properties, Five-Star hotels, heritage properties, and homestays operational in India.",
+    evaluationCriteria: "Guest satisfaction scores, architectural preservation (for heritage), service standards, eco-friendly practices, and culinary excellence.",
+    requirements: ["Star / Heritage / Homestay Accreditation", "Guest Review Summary", "Property Portfolio Showcase", "Sustainability & Community Initiatives"]
   }
 ];
 

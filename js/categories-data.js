@@ -9,9 +9,9 @@ const CATEGORIES_DATA = [
     groupName: "Travel Enablers",
     summary: "Recognising operators driving seamless mobility, pilgrimage journeys, and fleet excellence.",
     subcategories: [
-      "Best Pilgrimage Operator",
       "Best Fleet Operator",
-      "Best Travel Operator of the Year"
+      "Best Pilgrimage Operator",
+      "Tour Operator of the Year"
     ],
     eligibility: "Open to registered pilgrimage operators, fleet operators, and travel operators operating within India.",
     evaluationCriteria: "Operational efficiency, fleet reliability, passenger safety records, digital booking integration, guest feedback, and innovation in route connectivity.",
@@ -27,7 +27,7 @@ const CATEGORIES_DATA = [
       "Rising Star Operator",
       "Force Miles of Trust Award",
       "Sustainability Champion Award",
-      "Healthcare Focused Awards"
+      "Healthcare Mobility Award"
     ],
     eligibility: "Open to industry veterans, emerging tour operators, Force Traveller loyalty partners, and green mobility advocates.",
     evaluationCriteria: "Industry impact, sustainable mobility, loyalty excellence, and lifelong contribution to Indian travel.",
@@ -86,7 +86,7 @@ const CATEGORIES_DATA = [
       "Best Five-Star Hotel",
       "Best Heritage Hotel",
       "Best Home Stay",
-      "Best Eco-Tourism"
+      "Best Eco-Tourism Property"
     ],
     eligibility: "Open to licensed budget properties, Five-Star hotels, heritage properties, and homestays operational in India.",
     evaluationCriteria: "Guest satisfaction scores, architectural preservation (for heritage), service standards, eco-friendly practices, and culinary excellence.",

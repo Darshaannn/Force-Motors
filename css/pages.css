@@ -1675,8 +1675,8 @@
 
 .home-jury-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.75rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
 }
 
 .home-jury-card {
@@ -1695,8 +1695,13 @@
   box-shadow: 0 16px 36px rgba(198, 161, 91, 0.12);
 }
 
+.home-jury-card.home-jury-card-featured {
+  border-color: rgba(198, 161, 91, 0.35);
+  box-shadow: 0 8px 24px rgba(198, 161, 91, 0.08);
+}
+
 .home-jury-image {
-  height: 240px;
+  height: 220px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -1719,7 +1724,7 @@
 }
 
 .home-jury-info {
-  padding: 1.5rem 1.25rem;
+  padding: 1.25rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
@@ -1737,7 +1742,7 @@
 }
 
 .home-jury-name {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 800;
   color: var(--black);
   line-height: 1.2;
@@ -1745,13 +1750,19 @@
 }
 
 .home-jury-role {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: var(--text-secondary);
   line-height: 1.4;
   margin: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+  .home-jury-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
   .home-jury-grid {
     grid-template-columns: repeat(2, 1fr);
   }

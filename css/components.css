@@ -443,79 +443,108 @@
    -------------------------------------------------------------------------- */
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
   align-items: stretch;
+  max-width: 1040px;
+  margin-inline: auto;
 }
 
 .partner-card {
-  padding: 2rem 1.25rem;
-  background-color: var(--force-white, #ffffff);
-  border: 1px solid var(--force-border, #e2e8f0);
-  border-radius: 12px;
+  padding: 2.5rem 2rem 2.25rem;
+  background: #ffffff;
+  border: 1px solid rgba(212, 163, 62, 0.25);
+  border-radius: 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-  min-height: 200px;
+  gap: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  min-height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.partner-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.6;
+  transition: opacity 0.3s ease, height 0.3s ease;
 }
 
 .partner-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--force-primary, #1664ab);
-  box-shadow: 0 12px 28px rgba(22, 100, 171, 0.12);
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  box-shadow: 0 20px 40px rgba(198, 161, 91, 0.16);
+}
+
+.partner-card:hover::before {
+  opacity: 1;
+  height: 4px;
 }
 
 .partner-card.featured-partner {
-  border: 2px solid var(--force-primary, #1664ab);
-  box-shadow: 0 8px 24px rgba(22, 100, 171, 0.14);
-  background: linear-gradient(180deg, #ffffff 0%, rgba(22, 100, 171, 0.03) 100%);
+  border: 2px solid var(--gold);
+  box-shadow: 0 12px 32px rgba(198, 161, 91, 0.16);
+  background: linear-gradient(180deg, #ffffff 0%, rgba(198, 161, 91, 0.04) 100%);
+}
+
+.partner-card.featured-partner .partner-role-badge {
+  background-color: var(--gold-dark);
+  color: #ffffff;
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--gold);
+  font-size: 0.75rem;
 }
 
 .partner-logo-box {
   width: 100%;
-  height: 80px;
+  height: 95px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.75rem 1.5rem;
   box-sizing: border-box;
+  background: rgba(248, 250, 252, 0.6);
+  border-radius: 10px;
+  border: 1px solid rgba(226, 232, 240, 0.6);
 }
 
 .partner-logo-img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 75px;
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.04));
-  transition: transform 0.25s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.04));
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .partner-card:hover .partner-logo-img {
-  transform: scale(1.06);
+  transform: scale(1.08);
 }
 
 .partner-role-badge {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--force-gray-500, #64748b);
-  display: block;
+  color: var(--gold-dark);
+  background: rgba(198, 161, 91, 0.08);
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(198, 161, 91, 0.25);
+  display: inline-block;
 }
-
-.partner-card.featured-partner .partner-role-badge {
-  background-color: var(--force-primary, #1664ab);
-  color: #ffffff;
-  padding: 0.3rem 0.75rem;
-  border-radius: 40px;
-  font-size: 0.625rem;
-}
-
 .partner-tagline {
   font-size: 0.75rem;
   font-weight: 700;

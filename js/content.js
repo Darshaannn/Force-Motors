@@ -10,7 +10,7 @@ Do not automatically rewrite, summarize, or paraphrase.
 
 const CONTENT = {
   definitions: [
-    { term: "Awards", definition: "Travel and Tourism Awards presented by Force Motors." },
+    { term: "Awards", definition: "FORCE MOTORS PRESENTS TRAVEL AND TOURISM AWARDS." },
     { term: "Owner of the Awards", definition: "Force Motors" },
     { term: "Awards Management", definition: "Force Motors and designated event management secretariats" },
     { term: "Applicant / Nominee", definition: "Any company / organisation / initiative submitting a entry in accordance with these rules." },

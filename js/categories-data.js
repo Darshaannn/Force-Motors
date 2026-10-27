@@ -1,6 +1,6 @@
 /**
  * CATEGORIES_DATA
- * Central canonical data source for the 6 main award headings and 23 sub-awards.
+ * Central canonical data source for the 6 main award headings and 22 sub-awards.
  */
 const CATEGORIES_DATA = [
   {
@@ -39,7 +39,7 @@ const CATEGORIES_DATA = [
     groupName: "Tourism & Adventure",
     summary: "Celebrating destination creators, attraction destinations, and tour operators across India and abroad.",
     subcategories: [
-      "Best Theme Attraction Destination",
+      "Best Theme Destination",
       "Best Domestic Tour Operator*",
       "Best International Tour Operator*",
       "Best Self Drive Tour Operator"
@@ -55,7 +55,6 @@ const CATEGORIES_DATA = [
     summary: "Recognising impactful tourism campaigns, tour operators, and rural connectivity initiatives.",
     subcategories: [
       "Best Domestic Tourism Board",
-      "Best Tour Operator",
       "Best Rural Connectivity Operator"
     ],
     eligibility: "Open to domestic tourism boards, tour operators, and rural connectivity operators promoting travel within India.",
